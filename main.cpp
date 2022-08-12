@@ -15,6 +15,7 @@ int main(int argc, char** argv)
         scanf("%s", data);
         strings.push_back(data);
     }
+    std::cout << "-------------" << std::endl;
     std::sort(strings.begin(), strings.end(), [](const String& str1, const String& str2){return str1 > str2;});
     for(const auto str : strings)
         std::cout << str << std::endl;

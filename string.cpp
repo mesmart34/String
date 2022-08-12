@@ -65,7 +65,7 @@ String operator+(const String& a, const String& b)
 
 std::ostream& operator<<(std::ostream& stream, const String& string)
 {
-//    if (string.m_size > 0)
+    if (string.m_size > 0)
         stream << string.m_data;
     return stream;
 }
